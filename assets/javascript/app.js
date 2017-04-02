@@ -42,8 +42,7 @@ function displaySuperheroInfo() {
 
             if ($(this).attr('state') === 'still') {
                 $(this).attr({ 'src': $(this).attr('gif-active'), state: 'active' });
-            } 
-            else if ($(this).attr('state') === 'active') {
+            } else if ($(this).attr('state') === 'active') {
                 $(this).attr({ 'src': $(this).attr('gif-still'), state: 'still' });
 
             }
@@ -59,6 +58,7 @@ function renderButtons() {
 
         var a = $("<button>");
         a.addClass("superhero");
+        a.addClass("btn btn-primary");
         a.attr("data-name", topics[i]);
         a.text(topics[i]);
 
